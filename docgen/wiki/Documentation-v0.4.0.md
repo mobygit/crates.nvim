@@ -5,7 +5,7 @@ Documentation for `crates.nvim` `v0.4.0`
 - Completion sources for:
     - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
     - [coq.nvim](https://github.com/ms-jpq/coq_nvim)
-- [null-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim)/[none-ls.nvim](https://github.com/nvimtools/none-ls.nvim) code actions
+- [none-ls.nvim](https://github.com/jose-elias-alvarez/none-ls.nvim)/[none-ls.nvim](https://github.com/nvimtools/none-ls.nvim) code actions
 - Update crates to newest compatible version
 - Upgrade crates to newest version
 - Respect existing version requirements and update them in an elegant way (`smart_insert`)
@@ -73,12 +73,12 @@ require("crates").setup {
 ```
 
 ## Code actions
-### [null-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim)/[none-ls.nvim](https://github.com/nvimtools/none-ls.nvim) source
+### [none-ls.nvim](https://github.com/jose-elias-alvarez/none-ls.nvim)/[none-ls.nvim](https://github.com/nvimtools/none-ls.nvim) source
 Enable it in the setup, and optionally change the display name.
 ```lua
 require("crates").setup {
     ...
-    null_ls = {
+    none_ls = {
         enabled = true,
         name = "crates.nvim",
     },
@@ -233,7 +233,7 @@ require("crates").setup {
             name = "Crates",
         },
     },
-    null_ls = {
+    none_ls = {
         enabled = false,
         name = "Crates",
     },

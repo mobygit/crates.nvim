@@ -69,8 +69,8 @@ local function setup(cfg)
         require("crates.src.coq").setup(state.cfg.src.coq.name)
     end
 
-    if state.cfg.null_ls.enabled then
-        require("crates.null-ls").setup(state.cfg.null_ls.name)
+    if state.cfg.none_ls.enabled then
+        require("crates.none-ls").setup(state.cfg.none_ls.name)
     end
 end
 

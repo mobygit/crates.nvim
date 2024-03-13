@@ -51,7 +51,7 @@ body:
             plenary = "https://github.com/nvim-lua/plenary.nvim",
             -- cmp = "https://github.com/hrsh7th/nvim-cmp",
             -- coq = "https://github.com/ms-jpq/coq_nvim",
-            -- null_ls = "https://github.com/jose-elias-alvarez/null-ls.nvim",
+            -- none_ls = "https://github.com/nvimtools/none-ls.nvim",
         }) do
             local install_path = vim.fn.fnamemodify("crates_issue/" .. name, ":p")
             if vim.fn.isdirectory(install_path) == 0 then
@@ -66,14 +66,14 @@ body:
                 -- cmp = { enabled = true },
                 -- coq = { enabled = true },
             },
-            -- null_ls = { enabled = true },
+            -- none_ls = { enabled = true },
         })
 
         -- require("cmp").setup({
         -- 	sources = { { name = "crates" } },
         -- })
 
-        -- require("null-ls").setup({
+        -- require("none-ls").setup({
         -- 	on_attach = function(client, buf)
         -- 		vim.keymap.set("n", "<space>a", vim.lsp.buf.code_action, { buffer = buf })
         -- 	end,

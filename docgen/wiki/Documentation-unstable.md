@@ -7,7 +7,7 @@ Documentation for `crates.nvim` `unstable`
     - [coq.nvim](https://github.com/ms-jpq/coq_nvim) source (`src.coq`)
 - Code actions using one of:
     - In-process language server (`lsp`)
-    - [null-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim)/[none-ls.nvim](https://github.com/nvimtools/none-ls.nvim)
+    - [none-ls.nvim](https://github.com/jose-elias-alvarez/none-ls.nvim)/[none-ls.nvim](https://github.com/nvimtools/none-ls.nvim)
 - Update crates to newest compatible version
 - Upgrade crates to newest version
 - Respect existing version requirements and update them in an elegant way (`smart_insert`)
@@ -115,14 +115,14 @@ require("crates").setup {
 
 ## Code actions
 Code actions are supported in a few different ways, either by the [in-process language server],
-which also supports completion, or by the null-ls/none-ls source.
+which also supports completion, or by the none-ls/none-ls source.
 
-### [null-ls.nvim](https://github.com/jose-elias-alvarez/null-ls.nvim)/[none-ls.nvim](https://github.com/nvimtools/none-ls.nvim) source
+### [none-ls.nvim](https://github.com/jose-elias-alvarez/none-ls.nvim)/[none-ls.nvim](https://github.com/nvimtools/none-ls.nvim) source
 Enable it in the setup, and optionally change the display name.
 ```lua
 require("crates").setup {
     ...
-    null_ls = {
+    none_ls = {
         enabled = true,
         name = "crates.nvim",
     },
@@ -291,7 +291,7 @@ require("crates").setup {
             name = "crates.nvim",
         },
     },
-    null_ls = {
+    none_ls = {
         enabled = false,
         name = "crates.nvim",
     },

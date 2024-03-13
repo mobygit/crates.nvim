@@ -227,7 +227,7 @@ For more information about individual config options see |crates-config|.
                 name = "crates.nvim",
             },
         },
-        null_ls = {
+        none_ls = {
             enabled = false,
             name = "crates.nvim",
         },
@@ -1426,22 +1426,22 @@ src.coq.name                                      *crates-config-src-coq-name*
     The source name displayed by |coq_nvim|.
 
 
-null_ls                                                *crates-config-null_ls*
+none_ls                                                *crates-config-none_ls*
     Section type: `NullLsConfig`
 
-    Configuration options for null-ls.nvim actions.
+    Configuration options for none-ls.nvim actions.
 
 
-null_ls.enabled                                *crates-config-null_ls-enabled*
+none_ls.enabled                                *crates-config-none_ls-enabled*
     Type: `boolean`, Default: `false`
 
-    Whether to register the |null-ls.nvim| source.
+    Whether to register the |none-ls.nvim| source.
 
 
-null_ls.name                                      *crates-config-null_ls-name*
+none_ls.name                                      *crates-config-none_ls-name*
     Type: `string`, Default: `"crates.nvim"`
 
-    The |null-ls.nvim| name.
+    The |none-ls.nvim| name.
 
 
 lsp                                                        *crates-config-lsp*

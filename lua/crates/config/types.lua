@@ -25,7 +25,7 @@
 ---@field diagnostic DiagnosticConfig
 ---@field popup PopupConfig
 ---@field src SrcConfig
----@field null_ls NullLsConfig
+---@field none_ls NullLsConfig
 ---@field lsp LspConfig
 
 ---@class TextConfig
@@ -226,7 +226,7 @@
 ---@field public highlight? crates.UserHighlightConfig
 ---@field public popup? crates.UserPopupConfig
 ---@field public src? crates.UserSrcConfig
----@field public null_ls? crates.UserNullLsConfig
+---@field public none_ls? crates.UserNullLsConfig
 ---@field public lsp? crates.UserLspConfig
 
 ---@class crates.UserTextConfig

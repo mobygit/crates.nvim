@@ -1497,31 +1497,31 @@ entry(schema_src_coq, {
 })
 
 
-local schema_null_ls = section_entry(M.schema, {
-    name = "null_ls",
+local schema_none_ls = section_entry(M.schema, {
+    name = "none_ls",
     type = {
         config_type = "section",
         emmylua_annotation = "NullLsConfig",
     },
     description = [[
-        Configuration options for null-ls.nvim actions.
+        Configuration options for none-ls.nvim actions.
     ]],
     fields = {},
 })
-entry(schema_null_ls, {
+entry(schema_none_ls, {
     name = "enabled",
     type = BOOLEAN_TYPE,
     default = false,
     description = [[
-        Whether to register the |null-ls.nvim| source.
+        Whether to register the |none-ls.nvim| source.
     ]],
 })
-entry(schema_null_ls, {
+entry(schema_none_ls, {
     name = "name",
     type = STRING_TYPE,
     default = "crates.nvim",
     description = [[
-        The |null-ls.nvim| name.
+        The |none-ls.nvim| name.
     ]],
 })
 

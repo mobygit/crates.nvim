@@ -5,10 +5,10 @@ local util = require("crates.util")
 
 function M.check()
     vim.health.start("Checking plugins")
-    if util.lualib_installed("null-ls") then
-        vim.health.ok("null-ls.nvim installed")
+    if util.lualib_installed("none-ls") then
+        vim.health.ok("none-ls.nvim installed")
     else
-        vim.health.info("null-ls.nvim not found")
+        vim.health.info("none-ls.nvim not found")
     end
 
     vim.health.start("Checking external dependencies")

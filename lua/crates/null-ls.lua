@@ -41,18 +41,18 @@ local M = {}
 ---@enum NullLsMethodKind
 
 ---@type boolean, NullLs
-local ok, null_ls = pcall(require, "null-ls")
+local ok, none_ls = pcall(require, "none-ls")
 if not ok then
-    util.notify(vim.log.levels.WARN, "null-ls.nvim was not found")
+    util.notify(vim.log.levels.WARN, "none-ls.nvim was not found")
     return {
         setup = function(_) end
     }
 end
 
 ---@type NullLsMethods
-local null_ls_methods = require("null-ls.methods")
+local none_ls_methods = require("none-ls.methods")
 ---@type NullLsMethodKind
-local CODE_ACTION = null_ls_methods.internal.CODE_ACTION
+local CODE_ACTION = none_ls_methods.internal.CODE_ACTION
 
 ---@param name string
 ---@return NullLsSource
@@ -94,7 +94,7 @@ end
 
 ---@params name string
 function M.setup(name)
-    null_ls.register(M.source(name))
+    none_ls.register(M.source(name))
 end
 
 return M
